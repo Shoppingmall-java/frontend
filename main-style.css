@@ -79,9 +79,19 @@ h1{
     margin-left: 84px;
 }
 
-.nav > li > a{
-    color: #fff;
-}
+.nav > li > a {
+    background: rgba(0,0,0,0.5); /* 네비게이션 링크에 반투명 배경 적용 */
+    color: #fff; /* 흰색 글씨 */
+    padding: 10px 15px; /* 클릭 가능 영역과 시각적 여백을 늘림 */
+    border-radius: 5px; /* 둥근 모서리 적용 */
+    transition: background-color 0.3s; /* 배경색 변경에 애니메이션 효과 적용 */
+  }
+
+  .nav > li > a:hover {
+    background: rgba(255,255,255,0.5); /* 마우스 호버 시 배경색 변경 */
+    color: #000; /* 마우스 호버 시 글씨 색 변경 */
+  }
+  
 
 .amount{
     position: relative;
